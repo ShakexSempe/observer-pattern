@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div class="square" id="elementObserver1"></div>
-    <hr>
-    <button type="button" onclick="model.increment()" >Increment</button>
-
+    <div class="container">
+        <div class="square" id="elementObserver1"></div>
+        <!-- <hr> -->
+        <button type="button" onclick="model.increment()">Increment</button>
+    </div>
     <script src="js/NumberModel.js"></script>
     <script src="js/ElementObserver.js"></script>
     <script>
         model.addObserver(elementObserver1)
+        model.notifyObservers(); //to refresh model to original state
     </script>
 </body>
 </html>

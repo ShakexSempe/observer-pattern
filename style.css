@@ -3,16 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: #6e1323;
+}
+.container {
+    background-color: #fff;
+    margin: 0 auto;
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 10vh;
+    height: 80vh;
+    width: 80%;
+}
 
 .square {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
     line-height: 50px;
     text-align: center;
-    display: inline-block;
+    display: grid;
+    align-items: center;    
     margin-right: 10px;
     background-color: #000;
     color: #fff;
     font-size: 150%;
     font-family: sans-serif;
+}
+
+button{
+    width: 40%;
+    height: 40px;
 }
