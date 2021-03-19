@@ -13,12 +13,13 @@
         <!-- <hr> -->
         <button type="button" onclick="model.increment()">Increment</button>
     </div>
-    <script src="js/NumberModel.js"></script>
-    <script src="js/ElementObserver.js"></script>
+
+    <script src="NumberModel.js"></script>
+    <script src="ElementObserver.js"></script>
     <script>
         const model = new NumberModel;
         const elementObserver1 = new ElementObserver('elementObserver1');
-        
+
         model.addObserver(elementObserver1)
         model.notifyObservers(); //to refresh model to original state
     </script>
