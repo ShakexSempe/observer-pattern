@@ -17,12 +17,18 @@
     <script src="ConsoleObserver.js"></script>
     <script src="NumberModel.js"></script>
     <script src="ElementObserver.js"></script>
+    <script src="HistoryObserver.js"></script>
     <script>
         const model = new NumberModel;
         const elementObserver1 = new ElementObserver('elementObserver1');
+        const consoleObserver = new ConsoleObserver();
+        const historyObserver = new HistoryObserver();
 
-        model.addObserver(elementObserver1)
+        model.addObserver(historyObserver);
+        model.addObserver(elementObserver1);
+        model.addObserver(consoleObserver);
         model.notifyObservers(); //to refresh model to original state
+    
     </script>
 </body>
 </html>
