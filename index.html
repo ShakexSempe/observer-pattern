@@ -11,6 +11,12 @@
     
     <div class="square" id="elementObserver1"></div>
     <hr>
-    <button type="button">Increment</button>
+    <button type="button" onclick="model.increment()" >Increment</button>
+
+    <script src="js/NumberModel.js"></script>
+    <script src="js/ElementObserver.js"></script>
+    <script>
+        model.addObserver(elementObserver1)
+    </script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 class NumberModel {
     constructor() {
         this.number = 0;
@@ -28,3 +29,5 @@ class NumberModel {
     }
 
 }
+
+const model = new NumberModel;
