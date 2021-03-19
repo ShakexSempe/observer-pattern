@@ -30,4 +30,3 @@ class NumberModel {
 
 }
 
-const model = new NumberModel;

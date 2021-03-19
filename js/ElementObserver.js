@@ -10,4 +10,3 @@ class ElementObserver {
     }
 }
 
-const elementObserver1 = new ElementObserver('elementObserver1')
