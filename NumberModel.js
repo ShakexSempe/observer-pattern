@@ -7,7 +7,12 @@ class NumberModel {
     }
 
     increment() {
-        const colors = ['orange', 'red','green', 'blue'];
+        const colors = ['orange', 'red','green', 
+        'blue', 'violet', 'grey', 
+        'darkblue', 'yellowgreen', 
+        'skyblue', 'darkgreen', 'purple', 
+        'brown', 'crimson', 'pink',
+        'maroon', 'yellow', 'black'];
         
         this.number++;
         //select a random element in the colors array
