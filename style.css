@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -38,4 +39,12 @@ body{
 button{
     width: 40%;
     height: 40px;
+    font-family: 'Syne Mono', monospace;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    button {
+        width: auto;
+    }
 }
